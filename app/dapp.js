@@ -14,9 +14,9 @@ import './dapp.css';
 
 class App extends React.Component 
 {
-  _blockchainLogsSubscription     = null;
-  _pendingTransactionSubscription = null;
-  _ethFilterSubscription          = null;
+//  _blockchainLogsSubscription     = null;
+//  _pendingTransactionSubscription = null;
+//  _ethFilterSubscription          = null;
 
 
 
@@ -147,7 +147,7 @@ class App extends React.Component
 
 
       console.log("[BEGIN] subscribing logs...");
-      this._blockchainLogsSubscription =
+  //    this._blockchainLogsSubscription =
           web3.eth.subscribe(
               'logs'                                 ,
                { address: instanceAddress }          ,
