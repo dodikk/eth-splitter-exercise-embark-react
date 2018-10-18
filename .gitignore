@@ -1,0 +1,15 @@
+coverage/
+.embark/
+node_modules/
+dist/
+config/production/password
+config/livenet/password
+
+
+## ????
+*.js.swp
+*.swp
+package-lock.json
+chains.json
+config/development/password
+*.save
