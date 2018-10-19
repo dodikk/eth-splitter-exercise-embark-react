@@ -55,7 +55,7 @@ class App extends React.Component
 
   componentDidMount() 
   {
-    EmbarkJS.onReady((err) => 
+    EmbarkJS.onReady(async (err) => 
     {
       this.setState({blockchainEnabled: true});
       if (err) 
@@ -328,28 +328,6 @@ class App extends React.Component
              <button onClick={ () => this.performSplit() }  > Split ether  </button>
         </p>
 
-      </div>
-
-
-
-// auto generated stuff. not deleted yet
-//
-<div>
-      <h3>Embark - Usage Example</h3>
-      <Tabs onSelect={this.handleSelect} activeKey={this.state.activeKey} id="uncontrolled-tab-example">
-        <Tab eventKey={1} title={this._renderStatus('Blockchain', this.state.blockchainEnabled)}>
-          <Blockchain/>
-        </Tab>
-        <Tab eventKey={2} title={this._renderStatus('Decentralized Storage', this.state.storageEnabled)}>
-          <Storage enabled={this.state.storageEnabled}/>
-        </Tab>
-        <Tab eventKey={3} title={this._renderStatus('P2P communication (Whisper)', this.state.whisperEnabled)}>
-          <Whisper enabled={this.state.whisperEnabled}/>
-        </Tab>
-        <Tab eventKey={4} title={this._renderStatus('Naming (ENS)', ensEnabled)}>
-          <ENS enabled={ensEnabled}/>
-        </Tab>
-      </Tabs>
     </div>);
   }
 }
